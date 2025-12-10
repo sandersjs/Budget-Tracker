@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Budget Dashboard</h1>
+<p>Total Expenses: ${{ total }}</p>
+
+<h3>Recent Expenses</h3>
+<ul class="list-group">
+    {% for e in expenses %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            {{ e.item }} - ${{ e.amount }} ({{ e.category }})
+        </li>
+    {% endfor %}
+</ul>
+
+<hr>
+<form method="post" action="{{ url_for('reset') }}">
+    <button type="submit" class="btn btn-danger">Reset All Expenses</button>
+</form>
+{% endblock %}

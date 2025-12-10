@@ -1,0 +1,22 @@
+[
+    {
+        "item": "Car",
+        "amount": "10000",
+        "category": "Transportation"
+    },
+    {
+        "item": "Steak",
+        "amount": "65",
+        "category": "Food & Dining"
+    },
+    {
+        "item": "Projector",
+        "amount": "890",
+        "category": "Entertainment"
+    },
+    {
+        "item": "Forks",
+        "amount": "265",
+        "category": "Utilities"
+    }
+]
